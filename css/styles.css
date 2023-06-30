@@ -1,1 +1,345 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 0.2;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  height: 50px;
+  border-radius: 25px;
+  background: var(--button-gradient, linear-gradient(0deg, #9356DC 0%, #FF79DA 100%));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: 700;
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+a:active {
+  color: inherit;
+}
+
+header {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: relative;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 63px;
+  padding-top: 15px;
+}
+header .logo img {
+  width: 197px;
+  height: 36px;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  height: 50px;
+  background-color: rgb(234, 234, 234);
+}
+header nav .loc_search {
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  color: rgb(53, 53, 53);
+  width: 130px;
+}
+header .retour {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+}
+
+.explorer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  gap: 10px;
+  background-color: rgb(246, 246, 246);
+}
+.explorer h1, .explorer h2 {
+  text-align: center;
+  margin: 0px;
+}
+.explorer h2 {
+  color: var(--grey, #353535);
+}
+.explorer button {
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.tuto {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.tuto h1 {
+  margin-bottom: 25px;
+}
+.tuto .card-list {
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 20px;
+  gap: 25px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  background: rgb(246, 246, 246);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 70px;
+  gap: 10px;
+}
+.card .chiffre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  background: var(--primary, #9356DC);
+  color: var(--white, #FFF);
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  right: 10px;
+}
+.card h3 {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(246, 246, 246);
+  padding-bottom: 65px;
+}
+.restaurants > h1 {
+  margin-top: 50px;
+}
+.restaurants .card-list {
+  padding-left: 15px;
+  padding-right: 15px;
+  gap: 20px;
+}
+.restaurants .card-restau {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  background: #FFF;
+  position: relative;
+}
+.restaurants .card-restau i {
+  position: absolute;
+  top: 210px;
+  right: 20px;
+}
+.restaurants .badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green-font, #008766);
+  font-size: 14px;
+  font-weight: 500;
+  width: 80px;
+  height: 30px;
+  border-radius: 2px;
+  background: var(--green, #99E2D0);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.restaurants img {
+  object-fit: cover;
+  width: 100%;
+  height: 175px;
+  border-radius: 15px 15px 0px 0px;
+}
+.restaurants .card_text {
+  width: 170px;
+}
+.restaurants .card_text > h1 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+.restaurants .card_text > h2 {
+  font-size: 17px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-top: 0px;
+}
+
+footer {
+  background: #353535;
+  padding: 20px 25px 10px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0px;
+  color: white;
+}
+.footer-list svg {
+  width: 100px;
+  height: 27px;
+  padding-bottom: 15px;
+  fill: rgb(255, 255, 255);
+}
+.footer-list i {
+  width: 11px;
+  height: 13px;
+  margin-right: 10px;
+}
+.footer-list li {
+  margin-bottom: 10px;
+}
+
+.main-container {
+  position: relative;
+}
+.main-container > i {
+  position: absolute;
+  top: 258px;
+  right: 35px;
+  z-index: 1;
+}
+
+.image-restau {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+
+.menu {
+  position: relative;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+  padding: 40px 0px;
+}
+.menu .menu-title {
+  position: absolute;
+  width: 100%;
+  border-radius: 40px 40px 0px 0px;
+  padding-left: 17px;
+  box-sizing: border-box;
+  background-color: rgb(246, 246, 246);
+  font-family: Shrikhand;
+  font-size: 28px;
+  top: -50px;
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+.menu .repas {
+  padding: 0px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+.menu .repas h1 {
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  text-transform: uppercase;
+  margin-left: 0px;
+}
+.menu .repas h1 .ligne {
+  margin-top: 5px;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+}
+
+.plat {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  padding: 0px 15px;
+  position: relative;
+  border-radius: 15px;
+  gap: 5px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.plat h2 {
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.plat .prix {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commander button {
+  width: 50%;
+}
+
 /*# sourceMappingURL=styles.css.map */
