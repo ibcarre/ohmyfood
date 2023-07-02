@@ -359,6 +359,15 @@ footer {
 .card-plat:hover p, .card-plat:hover h2 {
   width: 230px;
 }
+.card-plat:active .plat {
+  width: 85%;
+}
+.card-plat:active .check {
+  right: 0px;
+}
+.card-plat:active p, .card-plat:active h2 {
+  width: 230px;
+}
 .card-plat .plat {
   display: flex;
   flex-direction: column;

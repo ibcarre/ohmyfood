@@ -397,6 +397,19 @@ $light-grey: rgb(246,246,246);
         }
     }
 
+    &:active{
+        .plat{
+        width:85%;
+    }
+        .check{
+            right:0px;
+        }
+        p,h2{
+            width:230px;
+
+        }
+    }
+
 .plat{
     display: flex;
     flex-direction: column;
