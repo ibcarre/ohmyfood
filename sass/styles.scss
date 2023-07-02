@@ -48,6 +48,7 @@ p {
 
 a {
   text-decoration: none;
+  color: black;
   &:visited {
     color: inherit;
   }
@@ -544,26 +545,28 @@ footer {
       }
     }
 
-    .menu {
-      width: 75%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      .menu-title {
-        display: flex;
-        justify-content: center;
-      }
+  }
 
-      .repas {
-        padding-left: 210px;
-        padding-right: 210px;
-      }
+  
+  .menu {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    .menu-title {
+      display: flex;
+      justify-content: center;
     }
 
-    .main-container {
-      & > i {
-        right: 455px;
-      }
+    .repas {
+      padding-left: 210px;
+      padding-right: 210px;
+    }
+  }
+
+  .main-container {
+    & > i {
+      right: 455px;
     }
   }
 }
