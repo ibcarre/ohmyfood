@@ -5,6 +5,49 @@ $light-grey: rgb(246, 246, 246);
   font-family: "Roboto", sans-serif;
 }
 
+
+.loader-page{
+  position:fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: #585858de;
+  animation: cya 2s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cya {
+  0% { visibility: visible;}
+  99% {visibility: visible;}
+  100%{visibility: collapse;}
+}
+
+.loader{
+  margin:auto;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  position:fixed;
+  z-index: 9999;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #9356DC;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  99% { transform: rotate(720deg);
+    visibility: visible; }
+  100%{transform : rotate(360deg); 
+  visibility: collapse;}
+}
+
+
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   opacity: 0.2;
@@ -27,6 +70,11 @@ button {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
+  &:hover{
+    cursor:pointer;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(0deg, #9356DC 0%, #FF79DA 100%); 
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+  }
 }
 
 h1 {
@@ -330,6 +378,32 @@ footer {
   object-fit: cover;
 }
 
+#entree{
+  opacity: 0;
+  animation: appear 0.5s;
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+}
+
+#plats{
+  opacity: 0;
+  animation: appear 0.5s;
+  animation-delay: 250ms;
+  animation-fill-mode: forwards;
+}
+
+#desserts{
+  opacity: 0;
+  animation: appear 0.5s;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
 .menu {
   position: relative;
   width: 100%;
@@ -566,7 +640,7 @@ footer {
 
   .main-container {
     & > i {
-      right: 775px;
+      right: 35%;
     }
   }
 }
