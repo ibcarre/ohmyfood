@@ -342,6 +342,10 @@ footer {
 .footer-list li {
   margin-bottom: 10px;
 }
+.footer-list li a {
+  text-decoration: none;
+  color: white;
+}
 
 .footer-list-bold {
   font-weight: 500;
