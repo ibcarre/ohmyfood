@@ -331,6 +331,7 @@ header {
 footer {
   background: #353535;
   padding: 20px 25px 10px;
+  font-weight: 400;
 }
 
 .footer-list {
@@ -531,7 +532,7 @@ footer {
     transition: all 0.3s;
   }
 }
-.commander {
+.commander {      
   display: flex;
   justify-content: center;
   align-items: center;
